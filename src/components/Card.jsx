@@ -1,6 +1,6 @@
 const Cards = ({item}) => {
     return (<>
-        <div className=" mb-8 md:m-4" >
+        <div className=" mb-8 md:m-4 w-full p-2" >
             <div className="card bg-base-100  shadow-lg hover:scale-105 duration-300 dark:bg-slate-900 dark:text-white dark:border ">
                 <figure >
                     <img
