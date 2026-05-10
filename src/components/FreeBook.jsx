@@ -13,7 +13,6 @@ const FreeBook = () => {
     const getData = async () => {
       const res = await axios.get("https://book-store-backend-sigma.vercel.app/book");
       const data = res.data.filter((list) => list.price === 0);
-
       setBook(data);
     }
     getData();
@@ -37,13 +36,12 @@ const FreeBook = () => {
         }
       },
       {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          initialSlide: 3
-        }
-      },
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
       {
         breakpoint: 480,
         settings: {
